@@ -1,0 +1,17 @@
+class Solution {
+    ArrayList a=new ArrayList<>();
+
+    public TreeNode invertTree(TreeNode root) {
+        if(root==null){
+            return null;
+        }
+        if(root!=null){
+            TreeNode left=invertTree(root.left);
+            TreeNode right=invertTree(root.right);
+              
+              root.left=right;
+              root.right=left;
+        }
+        return root;
+    }
+}
