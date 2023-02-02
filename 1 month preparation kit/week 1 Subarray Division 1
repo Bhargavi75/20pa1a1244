@@ -1,0 +1,17 @@
+ public static int birthday(List<Integer> s, int d, int m) {
+      int min=0;
+      for(int i=0;i<s.size()-m+1;i++){
+          int sm=0;
+      for(int j=i;j<m+i;j++){
+          sm+=s.get(j);
+      }
+      
+      if(sm==d){
+          min+=1;
+      }
+
+    }
+    return min;
+
+}
+}
