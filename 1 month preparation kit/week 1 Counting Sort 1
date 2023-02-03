@@ -1,0 +1,15 @@
+public static List<Integer> countingSort(List<Integer> arr) {
+    Collections.sort(arr);
+    List<Integer> cnt=new ArrayList<Integer>(Collections.nCopies(100,0));
+    for(Integer i:arr){
+        if(cnt.get(i)!=0){
+            cnt.set(i,cnt.get(i)+1);
+        }
+        else{
+            cnt.set(i,1);
+        }
+    }
+      return cnt;
+    }
+
+}
