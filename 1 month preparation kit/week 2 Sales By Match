@@ -1,0 +1,18 @@
+public static int sockMerchant(int n, List<Integer> ar) {
+     Collections.sort(ar);
+     int cnt=0;
+     for(int i=1;i<=ar.size()-1;i=i+2){
+         if(ar.get(i)==ar.get(i-1)){
+             cnt=cnt+1;
+             
+         }
+         else{
+             i=i-1;
+         }
+         
+     }
+     return cnt;   
+
+    }
+
+}
