@@ -1,0 +1,16 @@
+ public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        String [] b=new String[a];
+        String [] c=new String [a];
+        for(int i=0;i<a;i++){
+            b[i]=s.next();
+            c[i]=s.next();
+       }
+        HashSet<String> st=new HashSet<String>();
+       for(int i=0;i<a;i++){
+           st.add(b[i]+" "+c[i]);
+           System.out.println(st.size());
+       }
+    }
+}
