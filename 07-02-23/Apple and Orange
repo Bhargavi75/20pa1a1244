@@ -1,0 +1,20 @@
+    int cnt=0;
+    int cn=0;
+    int c=0;
+    int d=0;
+      for(int i=0;i<apples.size();i++){
+            c=a+apples.get(i);
+            if(c>=s && c<=t){
+                cnt+=1;
+            }
+        }
+     for(int i=0;i<oranges.size();i++){
+           d=b+oranges.get(i);
+        if(d>=s && d<=t){
+            cn+=1;
+        }
+    }
+    System.out.println(cnt);
+    System.out.println(cn);
+    }
+}
